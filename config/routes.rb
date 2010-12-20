@@ -1,6 +1,10 @@
 Blog2::Application.routes.draw do
+  
+  
+  #omniauth
+  match '/auth/:provider/callback', :to => 'sessions#create'
+  #devise_for :users
   resources :posts
-
   get "home/index"
 
   # The priority is based upon order of creation:
@@ -52,7 +56,7 @@ Blog2::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  root :to => "home#index"
+    root :to => "home#index"  
   # See how all your routes lay out with "rake routes"
 
   # This is a legacy wild controller route that's not recommended for RESTful applications.

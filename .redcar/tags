@@ -1,10 +1,11 @@
-1292729533
+1292841785
 Application	/home/daniel/Dropbox/blog2/config/application.rb	  class Application 
 ApplicationController	/home/daniel/Dropbox/blog2/app/controllers/application_controller.rb	class ApplicationController 
 ApplicationHelper	/home/daniel/Dropbox/blog2/app/helpers/application_helper.rb	module ApplicationHelper
 Blog2	/home/daniel/Dropbox/blog2/config/application.rb	module Blog2
 BrowsingTest	/home/daniel/Dropbox/blog2/test/performance/browsing_test.rb	class BrowsingTest 
 CreatePosts	/home/daniel/Dropbox/blog2/db/migrate/20101217010229_create_posts.rb	class CreatePosts 
+DeviseCreateUsers	/home/daniel/Dropbox/blog2/db/migrate/20101219100654_devise_create_users.rb	class DeviseCreateUsers 
 HomeController	/home/daniel/Dropbox/blog2/app/controllers/home_controller.rb	class HomeController 
 HomeControllerTest	/home/daniel/Dropbox/blog2/test/functional/home_controller_test.rb	class HomeControllerTest 
 HomeHelper	/home/daniel/Dropbox/blog2/app/helpers/home_helper.rb	module HomeHelper
@@ -17,10 +18,16 @@ PostsControllerTest	/home/daniel/Dropbox/blog2/test/functional/posts_controller_
 PostsHelper	/home/daniel/Dropbox/blog2/app/helpers/posts_helper.rb	module PostsHelper
 PostsHelperTest	/home/daniel/Dropbox/blog2/test/unit/helpers/posts_helper_test.rb	class PostsHelperTest 
 S	/home/daniel/Dropbox/blog2/public/javascripts/jquery.js	function S(a,b){var d={};c.each(pa.concat.apply([],pa.slice(0,b)),function(){d[this]=a});return d}function qa(a){if(!ea[a])
+SessionsController	/home/daniel/Dropbox/blog2/app/controllers/sessions_controller.rb	class SessionsController 
+SessionsControllerTest	/home/daniel/Dropbox/blog2/test/functional/sessions_controller_test.rb	class SessionsControllerTest 
+SessionsHelper	/home/daniel/Dropbox/blog2/app/helpers/sessions_helper.rb	module SessionsHelper
+SessionsHelperTest	/home/daniel/Dropbox/blog2/test/unit/helpers/sessions_helper_test.rb	class SessionsHelperTest 
 Str	/home/daniel/Dropbox/blog2/public/javascripts/prototype.js	function Str(key, holder, stack)
 TestCase	/home/daniel/Dropbox/blog2/test/test_helper.rb	class ActiveSupport::TestCase
 Type	/home/daniel/Dropbox/blog2/public/javascripts/prototype.js	function Type(o)
 U	/home/daniel/Dropbox/blog2/public/javascripts/jquery.js	function U(){return false}function ca(){return true}function la(a,b,d){d[0].type=a;return c.event.handle.apply(b,d)}function Ka(a){var b,d,e,f,h,l,k,o,x,r,A,C=[];f=[];h=c.data(this,this.nodeType?"events":"__events__");if(typeof h==="function")
+User	/home/daniel/Dropbox/blog2/app/models/user.rb	class User 
+UserTest	/home/daniel/Dropbox/blog2/test/unit/user_test.rb	class UserTest 
 Y	/home/daniel/Dropbox/blog2/public/javascripts/jquery.js	function Y(a,b){return(a&&a!=="*"?a+".":"")
 a	/home/daniel/Dropbox/blog2/public/javascripts/jquery.js	function a(g,i,n,m,p,q){p=0;for(var u=m.length;p<u;p++){var y=m[p];if(y){var F=false;for(y=y[g];y;){if(y.sizcache===n){F=m[y.sizset];break}if(y.nodeType===1&&!q){y.sizcache=n;y.sizset=p}if(y.nodeName.toLowerCase()===i){F=y;break}y=y[g]}m[p]=F}}}function b(g,i,n,m,p,q){p=0;for(var u=m.length;p<u;p++){var y=m[p];if(y){var F=false;for(y=y[g];y;){if(y.sizcache===n){F=m[y.sizset];break}if(y.nodeType===1){if(!q){y.sizcache=n;y.sizset=p}if(typeof i!=="string"){if(y===i)
 abs	/home/daniel/Dropbox/blog2/public/javascripts/prototype.js	function abs()
@@ -47,6 +54,7 @@ compact	/home/daniel/Dropbox/blog2/public/javascripts/prototype.js	function comp
 concat	/home/daniel/Dropbox/blog2/public/javascripts/prototype.js	function concat()
 copy	/home/daniel/Dropbox/blog2/public/javascripts/prototype.js	function copy(methods, destination, onlyIfAbsent)
 create	/home/daniel/Dropbox/blog2/app/controllers/posts_controller.rb	  def create
+create	/home/daniel/Dropbox/blog2/app/controllers/sessions_controller.rb	  def create
 create	/home/daniel/Dropbox/blog2/public/javascripts/prototype.js	function create()
 cssNameFor	/home/daniel/Dropbox/blog2/public/javascripts/prototype.js	function cssNameFor(key)
 cumulativeOffset	/home/daniel/Dropbox/blog2/public/javascripts/prototype.js	function cumulativeOffset(element)
@@ -64,6 +72,7 @@ dirCheck	/home/daniel/Dropbox/blog2/public/javascripts/prototype.js	function dir
 dirNodeCheck	/home/daniel/Dropbox/blog2/public/javascripts/prototype.js	function dirNodeCheck( dir, cur, doneName, checkSet, nodeCheck, isXML )
 dispatch	/home/daniel/Dropbox/blog2/public/javascripts/effects.js	function dispatch(effect, eventName)
 down	/home/daniel/Dropbox/blog2/db/migrate/20101217010229_create_posts.rb	  def self.down
+down	/home/daniel/Dropbox/blog2/db/migrate/20101219100654_devise_create_users.rb	  def self.down
 e	/home/daniel/Dropbox/blog2/public/javascripts/jquery.js	function e(l){return f.step(l)
 each	/home/daniel/Dropbox/blog2/public/javascripts/prototype.js	function each(iterator)
 each	/home/daniel/Dropbox/blog2/public/javascripts/prototype.js	function each(iterator, context)
@@ -218,6 +227,7 @@ unfilterJSON	/home/daniel/Dropbox/blog2/public/javascripts/prototype.js	function
 uniq	/home/daniel/Dropbox/blog2/public/javascripts/prototype.js	function uniq(sorted)
 unset	/home/daniel/Dropbox/blog2/public/javascripts/prototype.js	function unset(key)
 up	/home/daniel/Dropbox/blog2/db/migrate/20101217010229_create_posts.rb	  def self.up
+up	/home/daniel/Dropbox/blog2/db/migrate/20101219100654_devise_create_users.rb	  def self.up
 update	/home/daniel/Dropbox/blog2/app/controllers/posts_controller.rb	  def update
 update	/home/daniel/Dropbox/blog2/public/javascripts/prototype.js	function update(array, args)
 update	/home/daniel/Dropbox/blog2/public/javascripts/prototype.js	function update(element, content)

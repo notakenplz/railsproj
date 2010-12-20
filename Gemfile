@@ -1,6 +1,9 @@
 source 'http://rubygems.org'
 
+gem 'omniauth'
 gem 'rails', '3.0.3'
+gem 'warden', '1.0.3'
+gem 'devise', :git => "git://github.com/plataformatec/devise.git"
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'

@@ -13,10 +13,17 @@ Blog2::Application.configure do
   config.consider_all_requests_local       = true
   config.action_view.debug_rjs             = true
   config.action_controller.perform_caching = false
+  
+  #authentication stuff using devise
+  #config.gem "warden", :version => "0.5.1"
+  #config.gem "devise", :version => "0.4.1"
 
   # Don't care if the mailer can't send
   config.action_mailer.raise_delivery_errors = false
 
+  # default URL options (devise)
+  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+  
   # Print deprecation notices to the Rails logger
   config.active_support.deprecation = :log
 
