@@ -1,4 +1,4 @@
-1292841785
+1292895000
 Application	/home/daniel/Dropbox/blog2/config/application.rb	  class Application 
 ApplicationController	/home/daniel/Dropbox/blog2/app/controllers/application_controller.rb	class ApplicationController 
 ApplicationHelper	/home/daniel/Dropbox/blog2/app/helpers/application_helper.rb	module ApplicationHelper
