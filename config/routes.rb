@@ -1,6 +1,5 @@
 Blog2::Application.routes.draw do
   
-  
   #omniauth
   match '/auth/:provider/callback', :to => 'sessions#create'
   #devise_for :users

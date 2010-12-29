@@ -1,15 +1,30 @@
 class PostsController < ApplicationController
+  #@@p_page = 10
+  #@@page = 1
+  #@@cur_end = @@p_page*@@page;
+  #@@cur_start = @@p_page*@@page-@@p_page;
+  
   # GET /posts
   # GET /posts.xml
   def index
-    @posts = Post.all
-
+    #@posts = Post.find(:all, :conditions => {:id => udr_start(@@p_page,@@page)..udr_end(@@p_page,@@page)}, :order => '6 desc')
+    #@posts = Post.all(:order => '6 desc')
+    #@posts = Post.paginate(:page => params[:page], :order => '6 DESC')
+    @posts = Post.search(params[:search], params[:page])
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @posts }
     end
   end
-
+  
+  def searcher
+    @posts = Post.search(params[:search], params[:page])
+    respond_to do |format|
+      format.html # index.html.erb
+      format.xml  { render :xml => @posts }
+    end
+  end
+  
   # GET /posts/1
   # GET /posts/1.xml
   def show
@@ -53,8 +68,27 @@ class PostsController < ApplicationController
     end
   end
 
+  # def prev
+  #   if @@page > 1
+  #    @@page -= 1
+  #  end
+  #  respond_to do |format|
+  #    format.html { redirect_to(@posts) }
+   #   format.xml  { render :xml => @posts }
+  # end
+  # end
+
+  # def next
+ #   @@page += 1
+# respond_to do |format|
+   #   format.html { redirect_to(@posts)}
+  #    format.xml  { render :xml => @posts }
+      #  end
+      #  end
+
   # PUT /posts/1
-  # PUT /posts/1.xml
+  # PUT /posts/1.xml  
+  
   def update
     @post = Post.find(params[:id])
 
@@ -80,4 +114,13 @@ class PostsController < ApplicationController
       format.xml  { head :ok }
     end
   end
+  
+  #protected
+  # def udr_start(p_page,page)
+  #  return (p_page*page)-p_page
+  # end
+  
+  #def udr_end(p_page, page)
+ #   return p_page*page
+#end
 end

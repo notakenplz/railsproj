@@ -1,0 +1,23 @@
+- title "Login"
+
+.loginLinks
+  = link_to image_tag('github_logo.png', :size => "74x53", :alt => "Github"), '/auth/github', :title => 'Github'
+
+  = link_to image_tag('google_64.png', :size => "64x64", :alt => "google"), '/auth/open_id?openid_url=google.com/accounts/o8/id', :title => 'Google'
+
+  = link_to image_tag('facebook_64.png', :size => "64x64", :alt => "Facebook"), '/auth/facebook', :title => 'Facebook'
+   
+  = link_to image_tag('twitter_64.png', :size => "64x64", :alt => "Twitter"), '/auth/twitter', :title => 'Twitter'
+
+  = link_to image_tag('yahoo_64.png', :size => "64x64", :alt => "Yahoo"), '/auth/open_id?openid_url=yahoo.com', :title => 'Yahoo'
+
+  = link_to image_tag('openid_64.png', :size => "64x64", :alt => "OpenID"), '/auth/open_id', :title => 'OpenID'
+
+%hr
+
+%p You can login to this site ...
+%p
+  Learn about
+  = link_to "OpenID", "http://openid.net/"
+  or
+  = link_to "OAuth", "http://oath.net"

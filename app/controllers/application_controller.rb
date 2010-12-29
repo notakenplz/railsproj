@@ -10,7 +10,7 @@ class ApplicationController < ActionController::Base
   def signed_in?
     !!current_user
   end
-
+  
   helper_method :current_user, :signed_in?
 
   def current_user=(user)

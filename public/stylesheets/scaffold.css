@@ -1,4 +1,4 @@
-body { background-color: #fff; color: #333; }
+body { background-color: #fff; color: #333;}
 
 body, p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
@@ -12,9 +12,20 @@ pre {
   font-size: 11px;
 }
 
+table{
+}
+
+th {
+  background-color: #A2C257;
+}
+
+td{
+  background-color: #DDD;
+}
+
 a { color: #000; }
-a:visited { color: #666; }
-a:hover { color: #fff; background-color:#000; }
+a:visited { color: purple; }
+a:hover { color: #C82536;}
 
 div.field, div.actions {
   margin-bottom: 10px;

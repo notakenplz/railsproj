@@ -1,4 +1,4 @@
-<CENTER><h1>Listing posts</h1>
+<CENTER><h1>Listing searches</h1>
 
 <table>
   <tr>
@@ -22,16 +22,11 @@
 <% end %>
 </table>
 <%= will_paginate @posts, :page_links => true %>
-<% form_tag request.path, :method => 'get' do %>
-  <% content_tag :label do %>
-    Search term:
-    <%= text_field_tag :search, params[:search] %>
-  <% end %>
-<% end %>
 
 </CENTER>
 
 <%= link_to 'New Post', new_post_path %>
 <br>
-  <%= link_to 'Home', home_index_path %>
+<%= link_to 'Home', home_index_path %>
 </br>
+<%= link_to 'Back to Posts', posts_path %>

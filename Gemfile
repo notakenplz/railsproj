@@ -1,12 +1,19 @@
 source 'http://rubygems.org'
 
+#twitter/facebook/etc authentication
 gem 'omniauth'
+
 gem 'rails', '3.0.3'
+
 #gem 'warden', '1.0.3'
 #gem 'devise', :git => "git://github.com/plataformatec/devise.git"
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
+
+#
+gem "will_paginate", :git => 'git://github.com/mislav/will_paginate.git', :branch => 'rails3'
+
 
 gem 'mysql2'
 

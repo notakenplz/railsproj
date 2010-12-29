@@ -4,6 +4,12 @@ class Post < ActiveRecord::Base
     validates :context, :presence => true,
                     :length => { :minimum => 1, :maximum => 65536}
     validates :title, :presence => true,
-                    :length => { :minimum => 5 , :maximum => 50}
-
+                  :length => { :minimum => 1 , :maximum => 50}
+    self.per_page = 10;
+    
+    def self.search(search, page)
+      paginate :per_page => 10, :page => page,
+           :conditions => ['name like ? OR context like?', "%#{search}%", "%#{search}%"], :order => '6 DESC'
+    end
+    
 end
