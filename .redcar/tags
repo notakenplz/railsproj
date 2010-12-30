@@ -1,4 +1,6 @@
-1293546863
+1293682764
+AddTagsToPostTest	/home/daniel/Dropbox/blog2/test/unit/add_tags_to_post_test.rb	class AddTagsToPostTest 
+AddTagsToPostsTest	/home/daniel/Dropbox/blog2/test/unit/add_tags_to_posts_test.rb	class AddTagsToPostsTest 
 Application	/home/daniel/Dropbox/blog2/config/application.rb	  class Application 
 ApplicationController	/home/daniel/Dropbox/blog2/app/controllers/application_controller.rb	class ApplicationController 
 ApplicationHelper	/home/daniel/Dropbox/blog2/app/helpers/application_helper.rb	module ApplicationHelper
@@ -9,6 +11,8 @@ Blog2	/home/daniel/Dropbox/blog2/config/application.rb	module Blog2
 BrowsingTest	/home/daniel/Dropbox/blog2/test/performance/browsing_test.rb	class BrowsingTest 
 CreateAuthorizations	/home/daniel/Dropbox/blog2/db/migrate/20101221021534_create_authorizations.rb	class CreateAuthorizations 
 CreatePosts	/home/daniel/Dropbox/blog2/db/migrate/20101217010229_create_posts.rb	class CreatePosts 
+CreateTags	/home/daniel/Dropbox/blog2/db/migrate/20101229130539_create_tags.rb	class CreateTags 
+CreateTagsPosts	/home/daniel/Dropbox/blog2/db/migrate/20101229133847_create_tags_posts.rb	class CreateTagsPosts 
 CreateUsers	/home/daniel/Dropbox/blog2/db/migrate/20101221021557_create_users.rb	class CreateUsers 
 HomeController	/home/daniel/Dropbox/blog2/app/controllers/home_controller.rb	class HomeController 
 HomeControllerTest	/home/daniel/Dropbox/blog2/test/functional/home_controller_test.rb	class HomeControllerTest 
@@ -26,6 +30,10 @@ SessionsController	/home/daniel/Dropbox/blog2/app/controllers/sessions_controlle
 SessionsControllerTest	/home/daniel/Dropbox/blog2/test/functional/sessions_controller_test.rb	class SessionsControllerTest 
 SessionsHelper	/home/daniel/Dropbox/blog2/app/helpers/sessions_helper.rb	module SessionsHelper
 SessionsHelperTest	/home/daniel/Dropbox/blog2/test/unit/helpers/sessions_helper_test.rb	class SessionsHelperTest 
+Tags	/home/daniel/Dropbox/blog2/app/models/tags.rb	class Tags 
+TagsPosts	/home/daniel/Dropbox/blog2/app/models/tags_posts.rb	class TagsPosts 
+TagsPostsTest	/home/daniel/Dropbox/blog2/test/unit/tags_posts_test.rb	class TagsPostsTest 
+TagsTest	/home/daniel/Dropbox/blog2/test/unit/tags_test.rb	class TagsTest 
 TestCase	/home/daniel/Dropbox/blog2/test/test_helper.rb	class ActiveSupport::TestCase
 U	/home/daniel/Dropbox/blog2/public/javascripts/jquery.js	function U(){return false}function ca(){return true}function la(a,b,d){d[0].type=a;return c.event.handle.apply(b,d)}function Ka(a){var b,d,e,f,h,l,k,o,x,r,A,C=[];f=[];h=c.data(this,this.nodeType?"events":"__events__");if(typeof h==="function")
 User	/home/daniel/Dropbox/blog2/app/models/user.rb	class User 
@@ -46,6 +54,8 @@ dispatch	/home/daniel/Dropbox/blog2/public/javascripts/effects.js	function dispa
 down	/home/daniel/Dropbox/blog2/db/migrate/20101217010229_create_posts.rb	  def self.down
 down	/home/daniel/Dropbox/blog2/db/migrate/20101221021534_create_authorizations.rb	  def self.down
 down	/home/daniel/Dropbox/blog2/db/migrate/20101221021557_create_users.rb	  def self.down
+down	/home/daniel/Dropbox/blog2/db/migrate/20101229130539_create_tags.rb	  def self.down
+down	/home/daniel/Dropbox/blog2/db/migrate/20101229133847_create_tags_posts.rb	  def self.down
 e	/home/daniel/Dropbox/blog2/public/javascripts/jquery.js	function e(l){return f.step(l)
 edit	/home/daniel/Dropbox/blog2/app/controllers/posts_controller.rb	  def edit
 fa	/home/daniel/Dropbox/blog2/public/javascripts/jquery.js	function fa(a){return c.isWindow(a)?a:a.nodeType===9?a.defaultView||a.parentWindow:false}var t=E.document,c=function(){function a(){if(!b.isReady){try{t.documentElement.doScroll("left")}catch(j){setTimeout(a,1);return}b.ready()}}var b=function(j,s){return new b.fn.init(j,s)},d=E.jQuery,e=E.$,f,h=/^(?:[^<]*(<[\w\W]+>)[^>]*$|#([\w\-]+)$)/,l=/\S/,k=/^\s+/,o=/\s+$/,x=/\W/,r=/\d/,A=/^<(\w+)\s*\/?>(?:<\/\1>)
@@ -72,4 +82,6 @@ test_homepage	/home/daniel/Dropbox/blog2/test/performance/browsing_test.rb	  def
 up	/home/daniel/Dropbox/blog2/db/migrate/20101217010229_create_posts.rb	  def self.up
 up	/home/daniel/Dropbox/blog2/db/migrate/20101221021534_create_authorizations.rb	  def self.up
 up	/home/daniel/Dropbox/blog2/db/migrate/20101221021557_create_users.rb	  def self.up
+up	/home/daniel/Dropbox/blog2/db/migrate/20101229130539_create_tags.rb	  def self.up
+up	/home/daniel/Dropbox/blog2/db/migrate/20101229133847_create_tags_posts.rb	  def self.up
 update	/home/daniel/Dropbox/blog2/app/controllers/posts_controller.rb	  def update
