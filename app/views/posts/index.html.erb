@@ -1,4 +1,5 @@
-<CENTER><h1>Listing posts</h1>
+<div id="post_list">
+<CENTER><h1>Posts</h1></CENTER>
 
 <table>
   <tr>
@@ -10,7 +11,7 @@
   </tr>
 
 <% @posts.each do |post| %>
-  <tr>
+<tr class="<%= cycle('list_line_odd', 'list_line_even') %>" >
     <td><%= post.name %></td>
     <td><%= link_to post.title, post %></td>
     <td><%= post.updated_at%></td>
@@ -18,9 +19,10 @@
     	<td><%= link_to 'Edit', edit_post_path(post) %></td>
    	 	<td><%= link_to 'Destroy', post, :confirm => 'Are you sure?', :method => :delete %></td>
 	  </p>
-  </tr>
+ </tr>
 <% end %>
 </table>
+
 <%= will_paginate @posts, :page_links => true %>
 <% form_tag request.path, :method => 'get' do %>
   <% content_tag :label do %>
@@ -28,10 +30,3 @@
     <%= text_field_tag :search, params[:search] %>
   <% end %>
 <% end %>
-
-</CENTER>
-
-<%= link_to 'New Post', new_post_path %>
-<br>
-  <%= link_to 'Home', home_index_path %>
-</br>

@@ -1,9 +1,5 @@
-<CENTER>
-	<h1>Home</h1>
-	<h2><p>Under Construction</p></h2>
-</CENTER>
+<h1>Home English Home</h1>
 <br>
-
 <%= link_to 'Blog', posts_path %>
 </br>
 <br>

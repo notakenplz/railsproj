@@ -14,15 +14,13 @@ pre {
 
 table{
 }
+/*
 
-th {
-  background-color: #A2C257;
-}
 
 td{
   background-color: #DDD;
 }
-
+*/
 a { color: #000; }
 a:visited { color: purple; }
 a:hover { color: #C82536;}
